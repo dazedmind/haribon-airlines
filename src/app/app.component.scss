@@ -1,3 +1,4 @@
+
 ion-menu ion-content {
   --background: var(--ion-item-background, var(--ion-background-color, #fff));
 }
@@ -116,4 +117,169 @@ ion-note {
 
 ion-item.selected {
   --color: var(--ion-color-primary);
+}
+
+ion-item {
+  background-color: #efb758;
+}
+
+ion-label {
+  font-weight: bold;
+  font-family: "Kumbh Sans", sans-serif !important;
+  font-size: 22px;
+
+}
+
+ion-content {
+  font-family: "Kumbh Sans", sans-serif !important;
+  
+}
+
+ion-accordion {
+  border-radius: 13px;
+  background-color: #E8E8E8;
+ }
+
+ion-accordion-group {
+  width: 60vw;
+}
+
+ .accordion-contents{
+  display: flex;
+  padding: 1.5rem;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.accordion-contents input {
+  border: none;
+  outline: none;
+  padding: 0.8rem 1rem;
+  border-radius: 4px;
+  background-color: #DEDEDE;
+}
+
+.accordion-contents input:focus {
+  border: none;
+}
+
+#search-flight-btn {
+  padding: 0.8rem 1rem;
+  background-color: #17395C;
+  border-radius: 6px;
+  color: white;
+}
+
+.span-btn-end {
+  float: right;
+  position: absolute;
+  bottom: 2rem;
+  right: 2rem;
+}
+
+.flex-input {
+  display: flex;
+  flex-direction: column;
+}
+
+// ----------------
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  margin-bottom: 2rem;
+}
+
+.main-app {
+  margin-left: 10rem;
+  margin-top: -1.5rem;
+}
+
+body {
+  font-family: "Kumbh Sans", sans-serif !important;
+}
+
+ion-header {
+  display: flex;
+  align-items: center;
+  padding: 1rem 7rem;
+  justify-content: space-between;
+  background-color:rgba(0, 0, 0, 0.048);
+}
+
+#header-box img {
+  width: 20rem;
+}
+
+#nav-list {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  list-style-type: none;
+  font-size: larger;
+  color: black;
+
+}
+
+.nav-link a {
+  text-decoration: none;
+  color: black;
+}
+ 
+#login-btn {
+  padding: 0.7rem 1.5rem;
+  border-radius: 7px;
+  font-size: 16px;
+  background-color: #efb758;
+  color: black;
+}
+
+.book-flight {
+  width: 50%;
+  align-items: center;
+}
+
+#book-flight-section {
+  transform: translateX(11%);
+  margin-bottom: 4rem;
+}
+
+#background-image {
+  background: 
+  linear-gradient(to top, rgba(0, 0, 0, 0.856), transparent),
+  url(../assets/icon/backgroundimage.jpg);
+  width: 100%;
+  height: 80%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  top: 0;
+  z-index: -10;
+
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+#background-image h1{
+  font-size: 54px;
+  margin: auto;
+}
+
+// ---------------------------
+
+#explore-destination-section {
+
+}
+
+#promo-section {
+
+}
+
+#rewards-section {
+
+
 }

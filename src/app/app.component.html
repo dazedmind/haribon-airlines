@@ -1,29 +1,136 @@
 <ion-app>
-  <ion-split-pane contentId="main-content">
-    <ion-menu contentId="main-content" type="overlay">
-      <ion-content>
-        <ion-list id="inbox-list">
-          <ion-list-header>Inbox</ion-list-header>
-          <ion-note>hi&#64;ionicframework.com</ion-note>
+  <ion-header>
+    <div id="header-box">
+      <img src="../assets/icon/headerbox.png" alt="">
+    </div>
+      <ul id="nav-list">
+        <li class="nav-link">
+          <a href="#">Book</a>
+        </li>
+        <li class="nav-link">
+          <a href="#">Explore</a>
+        </li>
+        <li class="nav-link">
+          <a href="#">Flights</a>
+        </li>
+        <li class="nav-link">
+          <a href="#">Manage</a>
+        </li>
+        <li>
+          <button id="login-btn">Log In</button>
+        </li>
+      </ul>
+  </ion-header>
+  <ion-content>
+    <div id="background-image">
+      <h1>Welcome to HaribonAirlines!</h1>
+    </div>
 
-          <ion-menu-toggle auto-hide="false" *ngFor="let p of appPages; let i = index">
-            <ion-item routerDirection="root" [routerLink]="[p.url]" lines="none" detail="false" routerLinkActive="selected">
-              <ion-icon aria-hidden="true" slot="start" [ios]="p.icon + '-outline'" [md]="p.icon + '-sharp'"></ion-icon>
-              <ion-label>{{ p.title }}</ion-label>
-            </ion-item>
-          </ion-menu-toggle>
-        </ion-list>
+    <div class="main-app">
+      <!-- ALLEN -->
+      <div id="book-flight-section">
+        <div class="book-flight">
+          <ion-accordion-group value="first">
+            <ion-accordion value="first" toggleIcon="caret-down"> 
+              <ion-item slot="header" color="yellow">
+                <ion-label>Book a Flight</ion-label>
+              </ion-item>
+              <div class="ion-padding" slot="content">
+                <div class="accordion-contents">
+                  <span class="flex-input">
+                    <label for="departure">Departure</label>
+                    <input type="text" name="departure" placeholder="Select Departure">
+                  </span>
+  
+                  <span class="flex-input">
+                    <label for="destination">Destination</label>
+                    <input type="text" name="destination" placeholder="Select Destination">
+                  </span>
+   
+                  <span class="flex-input" id="date-input">
+                    <label for="date">Date</label>
+                    <div>
+                      <input type="date" name="date" placeholder="Depart Date">
+                      <input type="date" name="date" placeholder="Return Date">
+                    </div>
+                  </span>
 
-        <ion-list id="labels-list">
-          <ion-list-header>Labels</ion-list-header>
 
-          <ion-item *ngFor="let label of labels" lines="none">
-            <ion-icon aria-hidden="true" slot="start" ios="bookmark-outline" md="bookmark-sharp"></ion-icon>
-            <ion-label>{{ label }}</ion-label>
-          </ion-item>
-        </ion-list>
-      </ion-content>
-    </ion-menu>
-    <ion-router-outlet id="main-content"></ion-router-outlet>
-  </ion-split-pane>
+                  <span class="flex-input">
+                    <label for="promo">Promo Code</label>
+                    <input type="text" name="promo" placeholder="Enter Promo Code">
+                  </span>
+                  
+                  <span class="span-btn-end">
+                    <button id="search-flight-btn">Search Flights</button>
+                  </span>
+                </div>
+                
+
+              </div>
+            </ion-accordion>
+            <ion-accordion value="second" toggleIcon="caret-down">
+              <ion-item slot="header" color="yellow">
+                <ion-label>Manage Flights</ion-label>
+              </ion-item>
+              <div class="ion-padding" slot="content">
+                <div class="accordion-contents">
+                  <span class="flex-input">
+                    <label for="reference">Booking Reference No.</label>
+                    <input type="text" name="reference" placeholder="Enter Reference Number">
+                  </span>
+                </div>
+              </div>
+            </ion-accordion>
+
+            <ion-accordion value="third" toggleIcon="caret-down">
+              <ion-item slot="header" color="yellow">
+                <ion-label>Flight Status</ion-label>
+              </ion-item>
+              <div class="ion-padding" slot="content">
+                <div class="accordion-contents">
+                  <span class="flex-input">
+                    <label for="flight-num">Flight Number</label>
+                    <input type="text" name="flight-num" placeholder="Enter Flight Number">
+                  </span>
+                </div>
+              </div>
+            </ion-accordion>
+          </ion-accordion-group>
+        </div>
+      </div>
+
+        
+    <div id="explore-destination-section">
+      <h1>Explore Destinations</h1>
+      <div class="exlpore-destination">
+        <!-- INSERT CODE HERE -->
+      </div>
+    </div>
+  
+    <div id="promo-section">
+      <h1>Limited-time Promos</h1>
+      <div class="limited-promo">
+        <!-- INSERT CODE HERE -->
+      </div>
+    </div>
+  
+    
+    <div id="rewards-section">
+      <h1>Soar to New Destination</h1>
+      <div class="flight-rewards">
+        <!-- INSERT CODE HERE -->
+      </div>
+    </div>
+  
+    <div id="travel-guide-section">
+      <h1>Travel Guides and Information</h1>
+      <div class="travel-guide">
+        <!-- INSERT CODE HERE -->
+      </div>
+    </div>  
+    </div>
+
+  </ion-content>
+  
 </ion-app>
