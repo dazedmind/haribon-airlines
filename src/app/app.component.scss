@@ -138,10 +138,13 @@ ion-content {
 ion-accordion {
   border-radius: 13px;
   background-color: #E8E8E8;
+  box-shadow: none;
+  border: none;
  }
 
 ion-accordion-group {
   width: 60vw;
+  --border-color: transparent;
 }
 
  .accordion-contents{
