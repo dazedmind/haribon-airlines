@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { AlertController } from '@ionic/angular';
 
 @Component({
   selector: 'app-root',
@@ -14,4 +15,17 @@ export class AppComponent {
     { title: 'Trash', url: '/folder/trash', icon: 'trash' },
     { title: 'Spam', url: '/folder/spam', icon: 'warning' },
   ];
+
+  constructor(private alertController: AlertController) {}
+
+  async showLoginAlert() {
+    const alert = await this.alertController.create({
+      header: 'You must be logged in.',
+      cssClass: 'custom-alert',
+      message: 'Rewards are waiting ✈️⭐',
+      buttons: ['Okay!'], 
+    });
+
+    await alert.present();
+  }
 }
