@@ -1,0 +1,7 @@
+{
+  "name": "Haribon Airlines",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
