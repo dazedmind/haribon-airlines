@@ -275,7 +275,7 @@ ion-header {
 // ---------------------------
 
 #explore-destination-section {
-  margin-left: 10rem;
+
 }
 
 #promo-section {
@@ -285,6 +285,93 @@ ion-header {
 #travel-guide-section {
   margin-left: 10rem;
 }
+
+.promo-container {
+  width: 1000px;
+  height: 200px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.price-card {
+  display: flex;
+  width: 320px;
+  height: 105px;
+  border-radius: 23px;
+  overflow: hidden;
+  background-color: #d9d9d9;
+}
+
+.price-left, .price-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.price-left {
+  background-color: #EFB758;
+  color: #000000;
+  flex-direction: column;
+}
+
+.price-right {
+  background-color: #d9d9d9;
+  color: black;
+  flex-direction: column;
+  text-align: left;
+  position: relative; 
+  padding-right: 40px; 
+}
+
+.trip-type {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.trip-duration {
+  font-size: 14px;
+}
+
+.for-just, .price, .inclusions {
+  text-align: left;
+}
+
+.price {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.inclusions {
+  font-size: 12px;
+  color: gray;
+}
+
+.arrow-btn {
+  position: absolute;
+  right: 10px; 
+  bottom: 32px; 
+  background: none;
+  border: none;
+  font-size: 30px;
+  color: black;
+  cursor: pointer;
+}
+
+.promo-button ion-button{
+  width: 150px;
+  height: 105px;
+}
+
+.promo-container ion-button{
+  --background: #EFB758;
+  --color: #000000;
+}
+
+
+
 
 #rewards-section {
   position: relative;
