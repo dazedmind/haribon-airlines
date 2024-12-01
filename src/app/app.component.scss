@@ -137,7 +137,7 @@ ion-content {
 
 ion-accordion {
   border-radius: 13px;
-  background-color: #E8E8E8;
+  background-color: #f8f8f8;
   box-shadow: none;
   border: none;
  }
@@ -149,7 +149,7 @@ ion-accordion-group {
 
  .accordion-contents{
   display: flex;
-  padding: 1.5rem;
+  padding:2rem;
   gap: 2rem;
   flex-wrap: wrap;
 }
@@ -159,7 +159,7 @@ ion-accordion-group {
   outline: none;
   padding: 0.8rem 1rem;
   border-radius: 4px;
-  background-color: #DEDEDE;
+  background-color: #ebeaea;
 }
 
 .accordion-contents input:focus {
@@ -209,9 +209,11 @@ body {
 ion-header {
   display: flex;
   align-items: center;
-  padding: 1rem 7rem;
+  padding: 1rem 6rem;
   justify-content: space-between;
   background-color:rgba(0, 0, 0, 0.048);
+  background-color: white;
+  font-size: 14px;
 }
 
 #header-box img {
@@ -272,18 +274,189 @@ ion-header {
   margin: auto;
 }
 
+.section-title {
+  font-weight:bold;
+}
+
 // ---------------------------
 
 #explore-destination-section {
+  position: relative;
+  overflow: visible;
+  display: inline-block;
+  margin-left: 10rem;
+  margin-bottom: 6rem;
 
+}
+.explore-destination {
+  width: 1000px;
+  height: 400px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  position: relative;
+  overflow: visible; 
+}
+.explore-card {
+  position: relative;
+  overflow: visible; 
+  width: 290px;
+  height: 362px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 23px; 
+  font-family: 'Kumbh Sans', sans-serif;
+}
+
+
+.explore-badge {
+  position: relative; /* This makes the badge positioned relative to this container */
+  display: inline-block;
+  margin: 20px; /* Optional: Add some spacing between cards */
+}
+.badge-container {
+  position: absolute;
+  top: 18px; /* Position the badge near the top of the card */
+  left: -16px; /* Adjust this value based on where you want the badge */
+  z-index: 10;
+  pointer-events: none;
+}
+ion-badge {
+  width: 111px;
+  height: 27px;
+  padding: 8px;
+  font-size: 12px;
+  --background: #EFB758;
+  --color: #252525;
+  border-radius: 19.5px;
+}
+.explore-card img{
+  width: 290px;
+  height: 189px;
+  object-fit: cover;
+}
+
+.explore-card ion-card-header, 
+.explore-card ion-card-content{
+  padding: 10px 28px 0px 28px;
+}
+
+ion-card-content {
+  font-size: 12px;
+}
+.explore-card ion-button{
+  margin-top: 20px;
+  --background: #17395C;
+  --color: #ffff;
+  --border-radius: 8px;
+}
+
+#more-promot-btn {
+  width: 40rem;
+}
+.more-promo-text {
+  font-weight: bold;
+  text-align: start;
+  font-family: 'Kumbh Sans', sans-serif;
 }
 
 #promo-section {
   margin-left: 10rem;
+  margin-bottom: 6rem;
 }
 
 #travel-guide-section {
   margin-left: 10rem;
+  padding: 40px 20px;
+  margin-bottom: 5rem;
+}
+
+.travel-guide {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  flex-wrap: wrap; /* Ensures cards wrap on smaller screens */
+}
+
+.info-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: white;
+  border-radius: 23px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  width: 290px;
+  height: 362px;
+  height: auto;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin: 0rem 1rem;
+}
+
+.info-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.info-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+
+.card-content {
+  padding: 20px;
+  text-align: start;
+}
+
+.card-content h2 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333333;
+}
+
+.card-content p {
+  font-size: 14px;
+  color: #666666;
+  margin-bottom: 15px;
+  line-height: 1.5;
+}
+
+.btn-primary {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 14px;
+  color: white;
+  background-color: #17395C;
+  border: none;
+  border-radius: 8px;
+  text-transform: uppercase;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  width: 100%;
+} 
+
+.btn-primary:hover {
+  background-color: #17395C;    
+}
+
+@media (max-width: 768px) {
+  .travel-guide {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .card {
+    width: 100%;
+  }
+}
+.travel-guide{
+  display:flex;
 }
 
 .promo-container {
@@ -303,15 +476,19 @@ ion-header {
   background-color: #d9d9d9;
 }
 
-.price-left, .price-right {
+.price-right {
   flex: 1;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: start;
   padding: 20px;
 }
 
 .price-left {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: #EFB758;
   color: #000000;
   flex-direction: column;
@@ -369,9 +546,6 @@ ion-header {
   --background: #EFB758;
   --color: #000000;
 }
-
-
-
 
 #rewards-section {
   position: relative;
@@ -448,10 +622,10 @@ ion-header {
 }
 
 ::ng-deep .custom-alert {
-  --background: #EFB758;
+  --background: #E8E8E8;
   --header-color: #000;
   --message-color: #000;
-  --border-radius: 10px;
+  --border-radius: 13px;
 }
 
 ::ng-deep .custom-alert .alert-message span {
@@ -460,4 +634,61 @@ ion-header {
   color: #17395C;
 }
 
+ion-footer {
+  height: auto;
+  background-color: #131313;
+  color: white;
+}
 
+.footer-content {
+  display: flex;
+  gap: 6rem;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem;
+}
+
+.footer-logo-box {
+  display: flex;
+  flex-direction: column;
+}
+
+#footer-logo {
+  width: 11rem;
+}
+
+.footer-info-link {
+  text-wrap: wrap;
+  width: 20rem;
+}
+
+
+.footer-info-link h3 {
+  color: #EFB758;
+}
+
+.footer-info-link p {
+  color: #BDBDBD;
+  font-size: 14px;
+}
+
+.footer-links {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: white;
+}
+
+.flex-contact-box {
+  display: flex;
+  margin: 5px 0px;
+}
+
+.flex-contact-box ion-icon {
+  color: #BDBDBD;
+}

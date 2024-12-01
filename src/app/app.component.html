@@ -83,7 +83,7 @@
               </div>
             </ion-accordion>
 
-            <ion-accordion value="third" toggleIcon="caret-down">
+            <!-- <ion-accordion value="third" toggleIcon="caret-down">
               <ion-item slot="header" color="yellow">
                 <ion-label>Flight Status</ion-label>
               </ion-item>
@@ -94,14 +94,14 @@
                     <input type="text" name="flight-num" placeholder="Enter Flight Number">
                   </span>
                 </div>              </div>
-            </ion-accordion>
+            </ion-accordion> -->
           </ion-accordion-group>
         </div>
       </div>
 
         
     <div id="explore-destination-section">
-      <h1>Explore Destinations</h1>
+      <h1 class="section-title">Explore Destinations</h1>
       <div class="explore-destination">
         <div class="explore-badge">
           <div class="badge-container">
@@ -131,7 +131,6 @@
               <ion-card-title>Explore Palawan</ion-card-title>
               <ion-card-subtitle></ion-card-subtitle>
             </ion-card-header>
-          
             <ion-card-content>
               A tropical paradise with lush landscapes, and turquoise seas.
               <ion-button expand="block">Book a flight</ion-button>
@@ -162,7 +161,7 @@
     </div>
   
     <div id="promo-section">
-      <h1>Limited-time Promos</h1>
+      <h1 class="section-title">Limited-time Promos</h1>
       <div class="limited-promo">
         <div class="promo-container">
           <div class="price-card">
@@ -194,8 +193,8 @@
             </div>
           </div>
           <div class="promo-button">
-            <ion-button>
-              <p>See More Promos</p>
+            <ion-button id="more-promo-btn">
+              <p class="more-promo-text">See More Promos</p>
               <ion-icon slot="end" name="arrow-forward-outline"></ion-icon>
             </ion-button>
           </div>             
@@ -214,13 +213,95 @@
     </div>
   
     <div id="travel-guide-section">
-      <h1>Travel Guides and Information</h1>
+      <h1 class="section-title">Travel Guides and Information</h1>
       <div class="travel-guide">
         <!-- INSERT CODE HERE -->
+        <div class="info-card">
+          <img src="../assets/images/travel.jpg" alt="Travel Requirements" />
+          <div class="card-content">
+            <h2>Travel Requirements</h2>
+            <p>Get information on the travel requirements for a hassle-free flight.</p>
+            <button class="btn-primary">Read More</button>
+          </div>
+        </div>
+        <!-- Baggage Support Card -->
+        <div class="info-card">
+          <img src="../assets/images/baggage.jpg" alt = "Baggage Support"/>
+          <div class="card-content">
+            <h2>Baggage Support</h2>
+            <p>Find baggage guidelines or get help with lost and delayed luggage.</p>
+            <button class="btn-primary">Read More</button>
+          </div>
+        </div>
+        <!-- Check Flight Status Card -->
+        <div class="info-card">
+          <img src="../assets/images/flight-status.jpg" alt="Check Flight Status" />
+          <div class="card-content">
+            <h2>Check Flight Status</h2>
+            <p>Track real-time departures, arrivals, and flight changes.</p>
+            <button class="btn-primary">Check Flight Status</button>
+          </div>
+        </div>
+
       </div>
     </div>  
     </div>
 
+    <ion-footer>
+      <div class="footer-content">
+        <div class="footer-logo-box">
+          <img id="footer-logo" src="../assets/icon/haribonairlines-logo.png" alt="">
+          <h3>HaribonAirlines</h3>
+        </div>
+        <div class="footer-nav-link">
+          <ul class="footer-links">
+            <li>
+              <a href="#">Book</a>
+            </li>
+            <li>
+              <a href="#">Explore</a>
+            </li>
+            <li>
+              <a href="#">Flights</a>
+            </li>
+            <li>
+              <a href="#">Manage Flights</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-support-link">
+          <ul class="footer-links">
+            <li>
+              <a href="#">Need assistance</a>
+            </li>
+            <li>
+              <a href="#">Contact us</a>
+            </li>
+            <li>
+              <a href="#">Terms of Service</a>
+            </li>
+            <li>
+              <a href="#">Privacy & Policy</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-info-link">
+          <h3>HaribonAirlines</h3>
+          <p>Mabuhay Tower #88 Rizal Avenue, Bonifacio Global City, Taguig City, Metro Manila, Philippines 1634</p>
+          <span class="contact-info">
+            <div class="flex-contact-box">
+              <ion-icon name="call"></ion-icon>
+              <p>(907) 2315</p>
+            </div>
+
+            <div class="flex-contact-box">
+              <ion-icon name="mail"></ion-icon>
+              <p>haribonair&#64;support.ph</p>
+            </div>
+          </span>
+        </div>
+      </div>
+    </ion-footer>
   </ion-content>
-  
+
 </ion-app>

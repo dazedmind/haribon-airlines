@@ -9,3 +9,14 @@ body {
 :root {
   --ion-background-color: #ffffff;
 }
+
+.custom-alert{
+  // --background: #161e2c!important;   
+  --border-radius:13px!important;
+ }
+
+ion-button {
+  --border-radius: 23px;
+  --font-weight: bold !important;
+  --width: 40rem;
+}
