@@ -1,159 +1,119 @@
-
 ion-menu ion-content {
   --background: var(--ion-item-background, var(--ion-background-color, #fff));
 }
-
 ion-menu.md ion-content {
   --padding-start: 8px;
   --padding-end: 8px;
   --padding-top: 20px;
   --padding-bottom: 20px;
 }
-
 ion-menu.md ion-list {
   padding: 20px 0;
 }
-
 ion-menu.md ion-note {
   margin-bottom: 30px;
 }
-
-ion-menu.md ion-list-header,
-ion-menu.md ion-note {
+ion-menu.md ion-list-header, ion-menu.md ion-note {
   padding-left: 10px;
 }
-
 ion-menu.md ion-list#inbox-list {
   border-bottom: 1px solid var(--ion-background-color-step-150, #d7d8da);
 }
-
 ion-menu.md ion-list#inbox-list ion-list-header {
   font-size: 22px;
   font-weight: 600;
-
   min-height: 20px;
 }
-
 ion-menu.md ion-list#labels-list ion-list-header {
   font-size: 16px;
-
   margin-bottom: 18px;
-
   color: #757575;
-
   min-height: 26px;
 }
-
 ion-menu.md ion-item {
   --padding-start: 10px;
   --padding-end: 10px;
   border-radius: 4px;
 }
-
 ion-menu.md ion-item.selected {
   --background: rgba(var(--ion-color-primary-rgb), 0.14);
 }
-
 ion-menu.md ion-item.selected ion-icon {
   color: var(--ion-color-primary);
 }
-
 ion-menu.md ion-item ion-icon {
   color: #616e7e;
 }
-
 ion-menu.md ion-item ion-label {
   font-weight: 500;
 }
-
 ion-menu.ios ion-content {
   --padding-bottom: 20px;
 }
-
 ion-menu.ios ion-list {
   padding: 20px 0 0 0;
 }
-
 ion-menu.ios ion-note {
   line-height: 24px;
   margin-bottom: 20px;
 }
-
 ion-menu.ios ion-item {
   --padding-start: 16px;
   --padding-end: 16px;
   --min-height: 50px;
 }
-
 ion-menu.ios ion-item.selected ion-icon {
   color: var(--ion-color-primary);
 }
-
 ion-menu.ios ion-item ion-icon {
   font-size: 24px;
   color: #73849a;
 }
-
 ion-menu.ios ion-list#labels-list ion-list-header {
   margin-bottom: 8px;
 }
-
-ion-menu.ios ion-list-header,
-ion-menu.ios ion-note {
+ion-menu.ios ion-list-header, ion-menu.ios ion-note {
   padding-left: 16px;
   padding-right: 16px;
 }
-
 ion-menu.ios ion-note {
   margin-bottom: 8px;
 }
-
 ion-note {
   display: inline-block;
   font-size: 16px;
-
   color: var(--ion-color-medium-shade);
 }
-
 ion-item.selected {
   --color: var(--ion-color-primary);
 }
-
 ion-item {
   background-color: #efb758;
 }
-
 ion-label {
   font-weight: bold;
   font-family: "Kumbh Sans", sans-serif !important;
   font-size: 22px;
-
 }
-
 ion-content {
   font-family: "Kumbh Sans", sans-serif !important;
-  
 }
-
 ion-accordion {
   border-radius: 13px;
   background-color: #f8f8f8;
   box-shadow: none;
   border: none;
- }
-
+}
 ion-accordion-group {
   width: 60vw;
   --border-color: transparent;
 }
-
- .accordion-contents{
+.accordion-contents{
   display: flex;
   padding:2rem;
   gap: 2rem;
   flex-wrap: wrap;
 }
-
 .accordion-contents input {
   border: none;
   outline: none;
@@ -161,51 +121,41 @@ ion-accordion-group {
   border-radius: 4px;
   background-color: #ebeaea;
 }
-
 .accordion-contents input:focus {
   border: none;
 }
-
 #search-flight-btn {
   padding: 0.8rem 1rem;
   background-color: #17395C;
   border-radius: 6px;
   color: white;
 }
-
 .span-btn-end {
   float: right;
   position: absolute;
   bottom: 2rem;
   right: 2rem;
 }
-
 .flex-input {
   display: flex;
   flex-direction: column;
 }
-
-// ----------------
-
+// ---------------- 
 *{
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
-
 h1 {
   margin-bottom: 2rem;
 }
-
 .main-app {
   // margin-left: 10rem;
   margin-top: -1.5rem;
 }
-
 body {
   font-family: "Kumbh Sans", sans-serif !important;
 }
-
 ion-header {
   display: flex;
   align-items: center;
@@ -215,11 +165,9 @@ ion-header {
   background-color: white;
   font-size: 14px;
 }
-
 #header-box img {
   width: 20rem;
 }
-
 #nav-list {
   display: flex;
   align-items: center;
@@ -227,14 +175,11 @@ ion-header {
   list-style-type: none;
   font-size: larger;
   color: black;
-
 }
-
 .nav-link a {
   text-decoration: none;
   color: black;
 }
- 
 #login-btn {
   padding: 0.7rem 1.5rem;
   border-radius: 7px;
@@ -242,43 +187,34 @@ ion-header {
   background-color: #efb758;
   color: black;
 }
-
 .book-flight {
   width: 50%;
   align-items: center;
 }
-
 #book-flight-section {
   transform: translateX(19%);
   margin-bottom: 4rem;
 }
-
 #background-image {
-  background: 
-  linear-gradient(to top, rgba(0, 0, 0, 0.856), transparent),
-  url(../assets/icon/backgroundimage.jpg);
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.856), transparent), url(../assets/icon/backgroundimage.jpg);
   width: 100%;
   height: 80%;
   background-size: cover;
   background-repeat: no-repeat;
   top: 0;
   z-index: -10;
-
   display: flex;
   align-items: center;
   color: white;
 }
-
 #background-image h1{
   font-size: 54px;
   margin: auto;
 }
-
 .section-title {
   font-weight:bold;
 }
-
-// ---------------------------
+// --------------------------- 
 
 #explore-destination-section {
   position: relative;
@@ -286,7 +222,6 @@ ion-header {
   display: inline-block;
   margin-left: 10rem;
   margin-bottom: 6rem;
-
 }
 .explore-destination {
   width: 1000px;
@@ -295,28 +230,30 @@ ion-header {
   flex-direction: row;
   justify-content: space-around;
   position: relative;
-  overflow: visible; 
+  overflow: visible;
 }
 .explore-card {
   position: relative;
-  overflow: visible; 
+  overflow: visible;
   width: 290px;
   height: 362px;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-  border-radius: 23px; 
+  border-radius: 23px;
   font-family: 'Kumbh Sans', sans-serif;
 }
-
-
 .explore-badge {
-  position: relative; /* This makes the badge positioned relative to this container */
+  position: relative;
+ /* This makes the badge positioned relative to this container */
   display: inline-block;
-  margin: 20px; /* Optional: Add some spacing between cards */
+  margin: 20px;
+ /* Optional: Add some spacing between cards */
 }
 .badge-container {
   position: absolute;
-  top: 18px; /* Position the badge near the top of the card */
-  left: -16px; /* Adjust this value based on where you want the badge */
+  top: 18px;
+ /* Position the badge near the top of the card */
+  left: -16px;
+ /* Adjust this value based on where you want the badge */
   z-index: 10;
   pointer-events: none;
 }
@@ -334,12 +271,9 @@ ion-badge {
   height: 189px;
   object-fit: cover;
 }
-
-.explore-card ion-card-header, 
-.explore-card ion-card-content{
+.explore-card ion-card-header, .explore-card ion-card-content{
   padding: 10px 28px 0px 28px;
 }
-
 ion-card-content {
   font-size: 12px;
 }
@@ -349,7 +283,6 @@ ion-card-content {
   --color: #ffff;
   --border-radius: 8px;
 }
-
 #more-promot-btn {
   width: 40rem;
 }
@@ -358,25 +291,22 @@ ion-card-content {
   text-align: start;
   font-family: 'Kumbh Sans', sans-serif;
 }
-
 #promo-section {
   margin-left: 10rem;
   margin-bottom: 6rem;
 }
-
 #travel-guide-section {
   margin-left: 10rem;
   padding: 40px 20px;
   margin-bottom: 5rem;
 }
-
 .travel-guide {
   display: flex;
   align-items: flex-start;
   gap: 20px;
-  flex-wrap: wrap; /* Ensures cards wrap on smaller screens */
+  flex-wrap: wrap;
+ /* Ensures cards wrap on smaller screens */
 }
-
 .info-card {
   display: flex;
   flex-direction: column;
@@ -391,12 +321,10 @@ ion-card-content {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   margin: 0rem 1rem;
 }
-
 .info-card:hover {
   transform: translateY(-5px);
   box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
 }
-
 .info-card img {
   width: 100%;
   height: 200px;
@@ -404,27 +332,22 @@ ion-card-content {
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }
-
-
 .card-content {
   padding: 20px;
   text-align: start;
 }
-
 .card-content h2 {
   font-size: 20px;
   font-weight: bold;
   margin-bottom: 10px;
   color: #333333;
 }
-
 .card-content p {
   font-size: 14px;
   color: #666666;
   margin-bottom: 15px;
   line-height: 1.5;
 }
-
 .btn-primary {
   display: inline-block;
   padding: 10px 20px;
@@ -438,27 +361,23 @@ ion-card-content {
   text-decoration: none;
   transition: background-color 0.3s ease;
   width: 100%;
-} 
-
-.btn-primary:hover {
-  background-color: #17395C;    
 }
-
+.btn-primary:hover {
+  background-color: #17395C;
+}
 @media (max-width: 768px) {
   .travel-guide {
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-  }
-
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+ }
   .card {
-    width: 100%;
-  }
+      width: 100%;
+ }
 }
 .travel-guide{
   display:flex;
 }
-
 .promo-container {
   width: 1000px;
   height: 200px;
@@ -466,7 +385,6 @@ ion-card-content {
   flex-direction: row;
   justify-content: space-around;
 }
-
 .price-card {
   display: flex;
   width: 320px;
@@ -475,7 +393,6 @@ ion-card-content {
   overflow: hidden;
   background-color: #d9d9d9;
 }
-
 .price-right {
   flex: 1;
   display: flex;
@@ -483,7 +400,6 @@ ion-card-content {
   align-items: start;
   padding: 20px;
 }
-
 .price-left {
   flex: 1;
   display: flex;
@@ -493,60 +409,50 @@ ion-card-content {
   color: #000000;
   flex-direction: column;
 }
-
 .price-right {
   background-color: #d9d9d9;
   color: black;
   flex-direction: column;
   text-align: left;
-  position: relative; 
-  padding-right: 40px; 
+  position: relative;
+  padding-right: 40px;
 }
-
 .trip-type {
   font-weight: bold;
   font-size: 18px;
 }
-
 .trip-duration {
   font-size: 14px;
 }
-
 .for-just, .price, .inclusions {
   text-align: left;
 }
-
 .price {
   font-size: 24px;
   font-weight: bold;
 }
-
 .inclusions {
   font-size: 12px;
   color: gray;
 }
-
 .arrow-btn {
   position: absolute;
-  right: 10px; 
-  bottom: 32px; 
+  right: 10px;
+  bottom: 32px;
   background: none;
   border: none;
   font-size: 30px;
   color: black;
   cursor: pointer;
 }
-
 .promo-button ion-button{
   width: 150px;
   height: 105px;
 }
-
 .promo-container ion-button{
   --background: #EFB758;
   --color: #000000;
 }
-
 #rewards-section {
   position: relative;
   height: 50rem;
@@ -554,92 +460,80 @@ ion-card-content {
   align-items: center;
   justify-content: center;
   margin-bottom: 4rem;
-
   .flight-rewards {
-    display: flex;
-    position: relative;
-    width: 100%;
-    height: 100%;
-    background: url('../assets/icon/Rewards.png') no-repeat center center;
-    background-size: cover;
-
-    .rewards-container {
       display: flex;
-      z-index: 2;
-      text-align: left;
-      color: #17395C;
-      padding: 1rem;
-      flex-direction: column;
-      justify-content: center;
-      max-width: 600px;
-      margin-left: 12rem;
-
-      h1 {
-        font-size: 2rem;
-        margin-bottom: 1rem;
-        font-family: "Kumbh Sans", sans-serif !important;
-        font-weight: 700;
-        color: #000000;
-      }
-
-      p {
-        font-size: 1.125rem;
-        margin-bottom: 1.5rem;
-        font-family: "Kumbh Sans", sans-serif !important;
-        font-weight: 400;
-        color: #000000;
-      }
-
-      #redeem-points-btn {
-        padding: 0.8rem 1rem;
-        background-color: #17395C;
-        color: #fff;
-        border: none;
-        border-radius: 6px;
-        cursor: pointer;
-        font-size: 16px;
-        font-family: "Kumbh Sans", sans-serif !important;
-
-        &:hover {
-          background-color: darken(#17395C, 10%);
-        }
-      }
-    }
-  }
+      position: relative;
+      width: 100%;
+      height: 100%;
+      background: url('../assets/icon/Rewards.png') no-repeat center center;
+      background-size: cover;
+      .rewards-container {
+          display: flex;
+          z-index: 2;
+          text-align: left;
+          color: #17395C;
+          padding: 1rem;
+          flex-direction: column;
+          justify-content: center;
+          max-width: 600px;
+          margin-left: 12rem;
+          h1 {
+              font-size: 2rem;
+              margin-bottom: 1rem;
+              font-family: "Kumbh Sans", sans-serif !important;
+              font-weight: 700;
+              color: #000000;
+         }
+          p {
+              font-size: 1.125rem;
+              margin-bottom: 1.5rem;
+              font-family: "Kumbh Sans", sans-serif !important;
+              font-weight: 400;
+              color: #000000;
+         }
+          #redeem-points-btn {
+              padding: 0.8rem 1rem;
+              background-color: #17395C;
+              color: #fff;
+              border: none;
+              border-radius: 6px;
+              cursor: pointer;
+              font-size: 16px;
+              font-family: "Kumbh Sans", sans-serif !important;
+              &:hover {
+                  background-color: darken(#17395C, 10%);
+             }
+         }
+     }
+ }
 }
-
 .custom-alert {
   --background: #EFB758;
   --header-color: #000;
   --message-color: #444;
   --border-radius: 10px;
 }
-
 .custom-alert .alert-message span {
   font-weight: bold;
   font-size: 16px;
   color: #17395C;
 }
-
 ::ng-deep .custom-alert {
   --background: #E8E8E8;
   --header-color: #000;
   --message-color: #000;
   --border-radius: 13px;
 }
-
 ::ng-deep .custom-alert .alert-message span {
   font-weight: bold;
   font-size: 16px;
   color: #17395C;
 }
-
 ion-footer {
   height: auto;
   background-color: #131313;
   color: white;
 }
-
 .footer-content {
   display: flex;
   gap: 6rem;
@@ -647,48 +541,38 @@ ion-footer {
   justify-content: center;
   padding: 4rem;
 }
-
 .footer-logo-box {
   display: flex;
   flex-direction: column;
 }
-
 #footer-logo {
   width: 11rem;
 }
-
 .footer-info-link {
   text-wrap: wrap;
   width: 20rem;
 }
-
-
 .footer-info-link h3 {
   color: #EFB758;
 }
-
 .footer-info-link p {
   color: #BDBDBD;
   font-size: 14px;
 }
-
 .footer-links {
   list-style-type: none;
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
 }
-
 .footer-links a {
   text-decoration: none;
   color: white;
 }
-
 .flex-contact-box {
   display: flex;
   margin: 5px 0px;
 }
-
 .flex-contact-box ion-icon {
   color: #BDBDBD;
 }
