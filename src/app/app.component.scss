@@ -593,3 +593,12 @@ ion-footer {
 .flex-contact-box ion-icon {
   color: #BDBDBD;
 }
+#travel-action-sheet,
+#baggage-action-sheet,
+#flight-status-action-sheet {
+  cursor: pointer;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  z-index: 99;
+}

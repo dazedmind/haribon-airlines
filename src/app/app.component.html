@@ -27,7 +27,6 @@
     </div>
 
     <div class="main-app">
-      <!-- ALLEN -->
       <div id="book-flight-section">
         <div class="book-flight">
           <ion-accordion-group value="first">
@@ -55,7 +54,6 @@
                     </div>
                   </span>
 
-
                   <span class="flex-input">
                     <label for="promo">Promo Code</label>
                     <input type="text" name="promo" placeholder="Enter Promo Code">
@@ -65,7 +63,6 @@
                     <button id="search-flight-btn">Search Flights</button>
                   </span>
                 </div>
-                
 
               </div>
             </ion-accordion>
@@ -82,19 +79,6 @@
                 </div>
               </div>
             </ion-accordion>
-
-            <!-- <ion-accordion value="third" toggleIcon="caret-down">
-              <ion-item slot="header" color="yellow">
-                <ion-label>Flight Status</ion-label>
-              </ion-item>
-              <div class="ion-padding" slot="content">
-                <div class="accordion-contents">
-                  <span class="flex-input">
-                    <label for="flight-num">Flight Number</label>
-                    <input type="text" name="flight-num" placeholder="Enter Flight Number">
-                  </span>
-                </div>              </div>
-            </ion-accordion> -->
           </ion-accordion-group>
         </div>
       </div>
@@ -220,6 +204,12 @@
           <div class="card-content">
             <h2>Travel Requirements</h2>
             <p>Get information on the travel requirements for a hassle-free flight.</p>
+            <ion-icon name="ellipsis-vertical-outline" id="travel-action-sheet"></ion-icon>
+            <ion-action-sheet
+              trigger="travel-action-sheet"
+              header="Actions"
+              [buttons]="getActionSheetButtons('Travel Requirements')">
+            </ion-action-sheet>
             <button class="btn-primary">Read More</button>
           </div>
         </div>
@@ -230,6 +220,12 @@
             <h2>Baggage Support</h2>
             <p>Find baggage guidelines or get help with lost and delayed luggage.</p>
             <button class="btn-primary">Read More</button>
+            <ion-icon name="ellipsis-vertical-outline" id="baggage-action-sheet"></ion-icon>
+            <ion-action-sheet
+              trigger="baggage-action-sheet"
+              header="Actions"
+              [buttons]="getActionSheetButtons('Baggage Support')">
+            </ion-action-sheet>
           </div>
         </div>
         <!-- Check Flight Status Card -->
@@ -239,6 +235,12 @@
             <h2>Check Flight Status</h2>
             <p>Track real-time departures, arrivals, and flight changes.</p>
             <button class="btn-primary">Check Flight Status</button>
+            <ion-icon name="ellipsis-vertical-outline" id="flight-status-action-sheet"></ion-icon>
+            <ion-action-sheet
+              trigger="flight-status-action-sheet"
+              header="Actions"
+              [buttons]="getActionSheetButtons('Flight Status')">
+            </ion-action-sheet>
           </div>
         </div>
 

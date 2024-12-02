@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { AlertController } from '@ionic/angular';
+import { ActionSheetButton } from '@ionic/angular'; // Add this import
+
 
 @Component({
   selector: 'app-root',
@@ -27,5 +29,29 @@ export class AppComponent {
     });
 
     await alert.present();
+  }
+
+  getActionSheetButtons(context: string): ActionSheetButton[] {
+    return [
+      {
+        text: `More Details on ${context}`,
+        icon: 'information-circle-outline',
+        handler: () => {
+          console.log(`More details clicked for ${context}`);
+        }
+      },
+      {
+        text: `Help with ${context}`,
+        icon: 'help-circle-outline',
+        handler: () => {
+          console.log(`Help clicked for ${context}`);
+        }
+      },
+      {
+        text: 'Cancel',
+        role: 'cancel',
+        icon: 'close'
+      }
+    ];
   }
 }
