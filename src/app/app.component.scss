@@ -181,11 +181,17 @@ ion-header {
   color: black;
 }
 #login-btn {
-  padding: 0.7rem 1.5rem;
+  padding: 0.7rem 1rem;
   border-radius: 7px;
   font-size: 16px;
   background-color: #efb758;
   color: black;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+#login-btn-icon {
+  font-size: 26px;
 }
 .book-flight {
   width: 50%;
@@ -213,14 +219,18 @@ ion-header {
 }
 .section-title {
   font-weight:bold;
+  margin-left: 10rem;
+  font-size: 32px;
 }
 // --------------------------- 
 
 #explore-destination-section {
   position: relative;
   overflow: visible;
-  display: inline-block;
-  margin-left: 10rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  // margin-left: 10rem;
   margin-bottom: 6rem;
 }
 .explore-destination {
@@ -292,17 +302,24 @@ ion-card-content {
   font-family: 'Kumbh Sans', sans-serif;
 }
 #promo-section {
-  margin-left: 10rem;
+  // margin-left: 10rem;
+  margin-top: 4rem;
   margin-bottom: 6rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 #travel-guide-section {
-  margin-left: 10rem;
-  padding: 40px 20px;
+  // margin-left: 10rem;
+  padding: 5px 20px;
   margin-bottom: 5rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 .travel-guide {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   gap: 20px;
   flex-wrap: wrap;
  /* Ensures cards wrap on smaller screens */
